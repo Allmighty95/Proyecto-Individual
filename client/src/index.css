@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,0.6) 0%, rgba(9,9,121,0.6) 35%, rgba(0,212,255,0.6) 100%), url(https://i.pinimg.com/originals/00/87/d0/0087d0650c443ed183933dfde895b2c7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#app{
+  height: 100%;
+  width: 100%;
+}
+
+nav{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navUl{
+  display: flex;
+  flex-direction: row;  
+}
+
+#navUl > li{
+  margin: 16px;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.link{
+  text-decoration: none !important;
+  color: white;
+}
+
+#brand{
+  text-decoration: none !important;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 8px;
+}
+
+#routes{
+  margin-top: 10%;
+}
+
+#title{
+  text-align: center;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: antiquewhite;
+}
+
+#title2{
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: antiquewhite;
+}
+
+#homeBody{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#searchInput {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 36px;
+}
+
+#filtersInput {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 36px;
+  margin-top: 16px;
+  color: white;
+}
+
+#filterInputs {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 36px;
+}
+
+#searchInput > input{
+  width: 90%;
+  height: 40px;
+  border: 0;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: white;
+  margin: 8;
+  padding-left: 44px;
+}
+
+#searchInput > button{
+  width: 20%;
+  
+}
+
+
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.sectionForm {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: white;
+  padding: 44px; 
+}
+
+.sectionForm > form {
+  padding: 28px;
+}
+
+.sectionForm > form > input{
+  width: 85%;
+  height: 40px;
+  border: 0;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 16px;
+}
+
+
+#gameItem{
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 20%;
+  margin: 8px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#gameItem > p {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.listedImage {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+select {
+  display: block;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  color: #444;
+  height: 44px;
+  line-height: 1.15;
+  padding: .4em 1.4em .3em .8em;
+  width: 30%;
+  max-width: 100%; 
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+  border-radius: .3em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+    linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+ }
+ select::-ms-expand {
+  display: none;
+ }
+ select:hover {
+  border-color: #888;
+ }
+ select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222; 
+  outline: none;
+ }
+ select option {
+  font-weight:normal;
+ }
+
+#detailContainer{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba(166, 168, 194, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: white;
+  padding: 44px; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
